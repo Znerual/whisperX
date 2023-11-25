@@ -4,7 +4,7 @@ from pyannote.audio import Pipeline
 from typing import Optional, Union
 import torch
 
-from .audio import load_audio, SAMPLE_RATE
+from whisperx.audio import load_audio, SAMPLE_RATE
 
 
 class DiarizationPipeline:

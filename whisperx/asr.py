@@ -9,9 +9,9 @@ import torch
 from transformers import Pipeline
 from transformers.pipelines.pt_utils import PipelineIterator
 
-from .audio import N_SAMPLES, SAMPLE_RATE, load_audio, log_mel_spectrogram
-from .vad import load_vad_model, merge_chunks
-from .types import TranscriptionResult, SingleSegment
+from whisperx.audio import N_SAMPLES, SAMPLE_RATE, load_audio, log_mel_spectrogram
+from whisperx.vad import load_vad_model, merge_chunks
+from whisperx.types import TranscriptionResult, SingleSegment
 
 def find_numeral_symbol_tokens(tokenizer):
     numeral_symbol_tokens = []
